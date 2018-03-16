@@ -11,7 +11,7 @@ In my case this is "C:\ffmpeg\bin", but it may change.
 
 If you are using Linux, you probably know enough to be able to do it.
 
-Requires [MakeBAX](https://gbatemp.net/threads/release-bax-boot-animations-for-your-3ds.497717/), **in the same folder as the file you want to convert and in the same folder as MakeBAX-Multi OR in your PATH**, renamed as "makebax" (**not** case sensitive). I don't know if I'm allowed to share MakeBAX here, so just download it from there. It's a .exe that you just need to put on your folder.
+Requires [MakeBAX](https://gitlab.com/Wolfvak/BAX/tags/first_release), **in the same folder as the file you want to convert and in the same folder as MakeBAX-Multi OR in your PATH**, renamed as "makebax" (**not** case sensitive). I don't know if I'm allowed to share MakeBAX here, so just download it from there. It's a .exe that you just need to put on your folder.
 
 # Usage
 
