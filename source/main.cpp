@@ -71,6 +71,7 @@ int main() {
 	cout << "Select screen for the video" << endl;
 	cout << "1. Top Screen" << endl;
 	cout << "2. Bottom Screen" << endl;
+	cout << "3. Both Screens" << endl;
 	cout << "> ";
 	cin >> screen;
 	cout << "Select a framerate, recommended 60." << endl;
@@ -78,9 +79,11 @@ int main() {
 	cin >> framerate;
 	
 	if (screen == "1") {
-		screen = "720";
+		screen = "400";
 	} else if (screen == "2") {
 		screen = "320";
+	} else if (screen == "3") {
+		screen = "720";
 	} else {
 		cout << "That's not a screen.";
 		return 1;
