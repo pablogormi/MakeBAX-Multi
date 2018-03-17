@@ -25,5 +25,5 @@ Requires [MakeBAX](https://gitlab.com/Wolfvak/BAX/tags/first_release), **in the 
 
 # Building it
 
-Browse to the /source/ folder and do "g++ main.cpp -o MakeBAX-Multi.exe"
+Browse to the /source/ folder and do "g++ main.cpp -o MakeBAX-Multi.exe -static-libgcc -static-libstdc++"
 Easy.
