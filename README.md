@@ -8,6 +8,7 @@ Only windows supported for now!
 
 Requires [ffmpeg](https://www.ffmpeg.org/download.html) **with the bin folder in PATH**. If you don't know what that is, and you've installed a .exe or .msi, it's probably ok. If it does not work, search for how to add to PATH, and add: "C:/yourpath/toffmpeg/bin"
 In my case this is "C:\ffmpeg\bin", but it may change.
+Another option is to have the file "ffmpeg.exe" **in the same folder** as MakeBAX-Multi. A search function that will search for the file inside the subfolders is planned but not yet implemented.
 
 If you are using Linux, you probably know enough to be able to do it. (Oh wait, I forgot, Linux is not supported)
 

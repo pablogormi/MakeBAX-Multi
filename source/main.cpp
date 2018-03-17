@@ -15,10 +15,21 @@ bool fileExist(const string& fileName)
 int main() {
 	system("echo off");
 	char version[] = "1.1";
-	string filename, outname, screen, framerate, outfile;
+	string filename, outname, screen, framerate, outfile, cont;
 	
 	// ask for stuff
 	cout << "BAX Converter v" << version << endl;
+	if (!fileExist("makebax.exe")) {
+		cout << "makebax.exe was not found!" << endl;
+		cout << "you may continue, but ONLY if you know what you're doing. " << endl;
+		cout << "if you don't know what this is, please follow the instructions again." << endl;
+		cout << "if the problem persists, open an issue or message @unipablojorge in gbatemp." << endl;
+		cout << "Do you want to continue? y/n" << endl;
+		cin >> cont;
+		if (cont != "y"){
+			return 0;
+		}
+	}
 	cout << "Enter file with extension, example: 'test.mp4'" << endl;
 	cout << "> "; 
 	cin >> filename;
