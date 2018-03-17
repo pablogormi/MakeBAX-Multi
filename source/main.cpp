@@ -2,6 +2,8 @@
 #include <fstream>
 #include <stdlib.h>
 #include <unistd.h>
+#include <sstream>
+
 
 using namespace std;
 
@@ -91,9 +93,19 @@ int main() {
 	
 	// Check for .gif and kick you out of the program because I'm too lazy
 	if (extension == "gif") {
-		cout << "Gif found! Can't convert directly to ivf. Converting to mp4... " << endl;
+		int repeat;
+		cout << "Gif found! Can't convert directly to ivf. I'm going to have to convert it to mp4" << endl;
+		
+		// Loop the gif n stuff
+		cout << "How many times do you want to loop the video? Recommended is 1 (no looping)." << endl;
+		cin >> repeat;
+		
+		repeat -= 1;
+		
+		
+		std::string s = std::to_string(repeat); 
 		sleep(1);
-		string gifcmd = "ffmpeg -i " + filename + " -b:v 1M -r " + framerate + " " + outname + ".mp4";
+		string gifcmd = "ffmpeg -stream_loop " + s + " -i " + filename + " -b:v 1M -r " + framerate + " " + outname + ".mp4";
 		system(gifcmd.c_str());
 		system("cls");
 		cout << " " <<endl;
