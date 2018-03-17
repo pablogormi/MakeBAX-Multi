@@ -16,7 +16,7 @@ bool fileExist(const string& fileName)
 
 int main() {
 	system("echo off");
-	char version[] = "1.1";
+	char version[] = "1.2";
 	string filename, outname, screen, framerate, outfile, cont;
 	
 	// ask for stuff
